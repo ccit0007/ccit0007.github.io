@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title> Biryani</title>
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script>
+		function toggleMenu() {
+			var mainMenu = document.getElementById("mainMenu");
+			mainMenu.classList.toggle('open');
+		}
+	</script>
+
+</head>
+
+<body id="biryani">
+	<header>
+		<nav id="navigation">
+			<a class="logo" href="recipe.html">
+				<span>
+					<!-- SVG inline -->
+          <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M14.75,6c-1.37,0-2.5,1.52-2.5,3.4c0,1.48,0.7,2.71,1.67,3.18L14,12.62V19h1.5v-6.38l0.08-0.03 c0.97-0.47,1.67-1.7,1.67-3.18C17.25,7.53,16.13,6,14.75,6 M6.5,9.96 M10.5,6C10.23,6,10,6.22,10,6.5V9H9.25V6.5 c0-0.28-0.22-0.5-0.5-0.5s-0.5,0.22-0.5,0.5V9H7.5V6.5C7.5,6.22,7.28,6,7,6S6.5,6.22,6.5,6.5v3.8c0,0.93,0.64,1.71,1.5,1.93V19h1.5 v-6.77c0.86-0.22,1.5-1,1.5-1.93V6.5C11,6.22,10.78,6,10.5,6z M20,4H4v16h16V4 M20,2c1.1,0,2,0.9,2,2v16c0,1.1-0.9,2-2,2H4 c-1.1,0-2-0.9-2-2V4c0-1.1,0.9-2,2-2H20z"/></g></svg>
+          <path xmlns="http://www.w3.org/2000/svg" d="M14.75,6c-1.37,0-2.5,1.52-2.5,3.4c0,1.48,0.7,2.71,1.67,3.18L14,12.62V19h1.5v-6.38l0.08-0.03 c0.97-0.47,1.67-1.7,1.67-3.18C17.25,7.53,16.13,6,14.75,6 M6.5,9.96 M10.5,6C10.23,6,10,6.22,10,6.5V9H9.25V6.5 c0-0.28-0.22-0.5-0.5-0.5s-0.5,0.22-0.5,0.5V9H7.5V6.5C7.5,6.22,7.28,6,7,6S6.5,6.22,6.5,6.5v3.8c0,0.93,0.64,1.71,1.5,1.93V19h1.5 v-6.77c0.86-0.22,1.5-1,1.5-1.93V6.5C11,6.22,10.78,6,10.5,6z M20,4H4v16h16V4 M20,2c1.1,0,2,0.9,2,2v16c0,1.1-0.9,2-2,2H4 c-1.1,0-2-0.9-2-2V4c0-1.1,0.9-2,2-2H20z"/>
+				</span>
+				<span>Biryani</span>
+			</a>
+				<a class="menuButton" onclick="toggleMenu();">
+				Learn More
+				<span>
+					<!-- SVG embedded as inline markup: CSS will be applied. -->
+					<svg class="chevronIcon" width="10px" height="10px" viewBox="0 0 10 10" focusable="false" aria-hidden="true">
+						<g>
+							<path d="M10,0v3L5,7L0,3V0l5,4L10,0z"></path>
+						</g>
+					</svg>
+					<span>
+			</a>
+      <div class="sideMenu">
+				<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+			</div>
+		</nav>
+		<!-- this menu is toggled with JavaScript -->
+		<nav id="mainMenu">
+			<ul>
+				<li><a href="index.html">About</a></li>
+				<li><a href="recipe.html">Recipe</a></li>
+				<li><a href="types.html">Types</a></li>
+      	<li><a href="credits.html">Credits</a></li>
+			</ul>
+		</nav>
+		<nav id="subNav">
+			<ul>
+				<li><a class="gem" href="index.html">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="recipe.html">Recipe</a></li>
+				<li><a href="types.html">Types</a></li>
+    		<li><a href="credits.html">Credits</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<section id="banner">
+		<div id="overlay">
+			<h1 style ="color:white">Recipe</h1>
+		</div>
+	</section>
+
+  <section id="content">
+        <!--the recipe page is based off of "ingredients" from the Wikipedia page referenced and image is taken by Shreyak Singh from unsplash.com-->
+        <div class="wrapper">
+    			<main id="news">
+    				<article is="story">
+              <h2>Wanting to learn how to make biryani?</h2>
+              <figure>
+                <style float:right;>
+                  </style>
+                <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" style="float:right;width:300px;height:370px;">
+              </figure>
+              <!--content taken from https://en.wikipedia.org/wiki/Biryani#Varieties-->
+                <p>Ingredients for <i>biryani</i> vary according to the region and the type of meat and vegetables used. Meat (of either chicken, goat, beef, lamb,<sup id="cite_ref-Makhijani_2017-06-22T10:00:00-04:00_25-0" class="reference"><a href="#cite_note-Makhijani_2017-06-22T10:00:00-04:00-25">[25]</a></sup> prawn or fish) is the prime ingredient with rice. As is common in dishes of the Indian subcontinent, vegetables are sometimes also used when preparing <i>biryani</i>. Corn may be used depending on the season and availability. Navratan <i>biryani</i> tends to use sweeter, richer ingredients such as <a href="https://en.wikipedia.org//wiki/Cashew" title="Cashew">cashews</a>, <a href="https://en.wikipedia.org//wiki/Kismis" class="mw-redirect" title="Kismis"><i>kismis</i></a> and fruits, such as <a href="https://en.wikipedia.org//wiki/Apple" title="Apple">apples</a> and <a href="https://en.wikipedia.org//wiki/Pineapple" title="Pineapple">pineapples</a>.<sup id="cite_ref-ndtvravish_21-1" class="reference"><a href="#cite_note-ndtvravish-21">[21]</a></sup>
+                </p>
+
+                <!--content taken from https://en.wikipedia.org/wiki/Biryani#Varieties-->
+                <p>The spices and <a href="https://en.wikipedia.org//wiki/Condiment" title="Condiment">condiments</a> used in biryani may include <a href="https://en.wikipedia.org//wiki/Ghee" title="Ghee"><i>ghee</i></a> (clarified butter), <a href="https://en.wikipedia.org//wiki/Nutmeg" title="Potato">nutmeg</a>, <a href="https://en.wikipedia.org//wiki/Mace_(spice)" class="mw-redirect" title="Mace (spice)">mace</a>,<sup id="cite_ref-WWeek_26-0" class="reference"><a href="#cite_note-WWeek-26">[26]</a></sup> <a href="https://en.wikipedia.org//wiki/Black_pepper" title="">pepper</a>, <a href="https://en.wikipedia.org//wiki/Clove" title="Clove">cloves</a>,<sup id="cite_ref-WWeek_26-1" class="reference"><a href="#cite_note-WWeek-26">[26]</a></sup> <a href="https://en.wikipedia.org//wiki/Cardamom" title="Cardamom">cardamom</a>, <a href="https://en.wikipedia.org//wiki/Cinnamon" title="Cinnamon">cinnamon</a>, <a href="https://en.wikipedia.org//wiki/Bay_leaf" title="Bay leaf">bay leaves</a>, <a href="https://en.wikipedia.org//wiki/Coriander" title="Coriander">coriander</a>, <a href="https://en.wikipedia.org//wiki/Mentha" title="Mentha">mint</a> leaves, <a href="https://en.wikipedia.org//wiki/Ginger" title="Ginger">ginger</a>, <a href="https://en.wikipedia.org//wiki/Onion" title="Onion">onions</a>, <a href="https://en.wikipedia.org//wiki/Tomato" title="Tomato">tomatoes</a>, <a href="https://en.wikipedia.org//wiki/Green_chilies" class="mw-redirect" title="Green chilies">green chilies</a>,<sup id="cite_ref-27" class="reference"><a href="#cite_note-27">[27]</a></sup> and <a href="https://en.wikipedia.org//wiki/Garlic" title="Garlic">garlic</a>. The premium varieties include <a href="https://en.wikipedia.org//wiki/Saffron" title="Saffron">saffron</a>.<sup id="cite_ref-WWeek_26-2" class="reference"><a href="#cite_note-WWeek-26">[26]</a></sup>
+                </p>
+                <!--content taken from https://en.wikipedia.org/wiki/Biryani#Varieties-->
+                <p>
+                The main ingredient that usually accompanies the spices is chicken or goat meat; special varieties might use beef or seafood instead. The dish may be served with <a href="https://en.wikipedia.org//wiki/Dahi_chutney" title="Dahi chutney"><i>dahi chutney</i></a> or <a href="https://en.wikipedia.org//wiki/Raita" title="Black pepper"><i>raita</i></a>, <a href="https://en.wikipedia.org//wiki/Korma" title="Korma"><i>korma</i></a>, <a href="https://en.wikipedia.org//wiki/Curry" title="Curry">curry</a>, a sour dish of <a href="https://en.wikipedia.org//wiki/Aubergine" class="mw-redirect" title="Aubergine">aubergine</a> (<a href="https://en.wikipedia.org//wiki/Brinjal" class="mw-redirect" title="Brinjal"><i>brinjal</i></a>), <a href="https://en.wikipedia.org//wiki/Boiled_egg" title="Boiled egg">boiled egg</a>, and <a href="https://en.wikipedia.org//wiki/Salad" title="Salad">salad</a>.</p>
+              </article>
+            </main>
+    				<aside id="sidebar">
+      					<div class="widget">
+      						<h2>
+      							<span>
+      							<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34" style="width: 40px;">
+      								<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M14.75,6c-1.37,0-2.5,1.52-2.5,3.4c0,1.48,0.7,2.71,1.67,3.18L14,12.62V19h1.5v-6.38l0.08-0.03 c0.97-0.47,1.67-1.7,1.67-3.18C17.25,7.53,16.13,6,14.75,6 M6.5,9.96 M10.5,6C10.23,6,10,6.22,10,6.5V9H9.25V6.5 c0-0.28-0.22-0.5-0.5-0.5s-0.5,0.22-0.5,0.5V9H7.5V6.5C7.5,6.22,7.28,6,7,6S6.5,6.22,6.5,6.5v3.8c0,0.93,0.64,1.71,1.5,1.93V19h1.5 v-6.77c0.86-0.22,1.5-1,1.5-1.93V6.5C11,6.22,10.78,6,10.5,6z M20,4H4v16h16V4 M20,2c1.1,0,2,0.9,2,2v16c0,1.1-0.9,2-2,2H4 c-1.1,0-2-0.9-2-2V4c0-1.1,0.9-2,2-2H20z"/></g></svg>
+      								<path xmlns="http://www.w3.org/2000/svg" d="M14.75,6c-1.37,0-2.5,1.52-2.5,3.4c0,1.48,0.7,2.71,1.67,3.18L14,12.62V19h1.5v-6.38l0.08-0.03 c0.97-0.47,1.67-1.7,1.67-3.18C17.25,7.53,16.13,6,14.75,6 M6.5,9.96 M10.5,6C10.23,6,10,6.22,10,6.5V9H9.25V6.5 c0-0.28-0.22-0.5-0.5-0.5s-0.5,0.22-0.5,0.5V9H7.5V6.5C7.5,6.22,7.28,6,7,6S6.5,6.22,6.5,6.5v3.8c0,0.93,0.64,1.71,1.5,1.93V19h1.5 v-6.77c0.86-0.22,1.5-1,1.5-1.93V6.5C11,6.22,10.78,6,10.5,6z M20,4H4v16h16V4 M20,2c1.1,0,2,0.9,2,2v16c0,1.1-0.9,2-2,2H4 c-1.1,0-2-0.9-2-2V4c0-1.1,0.9-2,2-2H20z"/>
+      							</span>
+      							Subscribe to learn more!
+      						</h2>
+      						<p>Stay connected.</p>
+      						<form method="post" action="">
+      							<label for="email">Email address:</label>
+      							<input id="email" name="email" class="textbox" required="" placeholder="Enter your email address">
+      							<input type="submit" class="submit" value="Subscribe">
+      						</form>
+      					</div>
+                </aside>
+                </div>
+                </section>
+
+	<footer id="footer">
+		<ul>
+			<li class="extendedLogo">
+        <a href="/">
+          </a>
+			</li>
+			<li class="copyright">
+				<span>©</span>2020
+				 Biryani ltd.
+			</li>
+		</ul>
+	</footer>
+
+</body>
+
+</html>
