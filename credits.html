@@ -1,116 +1,77 @@
 <!doctype html>
-<html>
+<html lang="en" class="h-100">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-	<meta charset="UTF-8">
-	<title> Biryani</title>
-  <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Professional Portfolio</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
 
-	<script>
-		function toggleMenu() {
-			var mainMenu = document.getElementById("mainMenu");
-			mainMenu.classList.toggle('open');
-		}
-	</script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--styles-->
 
-</head>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+  </head>
+  <body class="bg-light d-flex flex-column h-100">
 
-<body id="biryani">
-	<header>
-		<nav id="navigation">
-			<a class="logo" href="recipe.html">
-				<span>
-					<!-- SVG inline -->
-          <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M14.75,6c-1.37,0-2.5,1.52-2.5,3.4c0,1.48,0.7,2.71,1.67,3.18L14,12.62V19h1.5v-6.38l0.08-0.03 c0.97-0.47,1.67-1.7,1.67-3.18C17.25,7.53,16.13,6,14.75,6 M6.5,9.96 M10.5,6C10.23,6,10,6.22,10,6.5V9H9.25V6.5 c0-0.28-0.22-0.5-0.5-0.5s-0.5,0.22-0.5,0.5V9H7.5V6.5C7.5,6.22,7.28,6,7,6S6.5,6.22,6.5,6.5v3.8c0,0.93,0.64,1.71,1.5,1.93V19h1.5 v-6.77c0.86-0.22,1.5-1,1.5-1.93V6.5C11,6.22,10.78,6,10.5,6z M20,4H4v16h16V4 M20,2c1.1,0,2,0.9,2,2v16c0,1.1-0.9,2-2,2H4 c-1.1,0-2-0.9-2-2V4c0-1.1,0.9-2,2-2H20z"/></g></svg>
-          <path xmlns="http://www.w3.org/2000/svg" d="M14.75,6c-1.37,0-2.5,1.52-2.5,3.4c0,1.48,0.7,2.71,1.67,3.18L14,12.62V19h1.5v-6.38l0.08-0.03 c0.97-0.47,1.67-1.7,1.67-3.18C17.25,7.53,16.13,6,14.75,6 M6.5,9.96 M10.5,6C10.23,6,10,6.22,10,6.5V9H9.25V6.5 c0-0.28-0.22-0.5-0.5-0.5s-0.5,0.22-0.5,0.5V9H7.5V6.5C7.5,6.22,7.28,6,7,6S6.5,6.22,6.5,6.5v3.8c0,0.93,0.64,1.71,1.5,1.93V19h1.5 v-6.77c0.86-0.22,1.5-1,1.5-1.93V6.5C11,6.22,10.78,6,10.5,6z M20,4H4v16h16V4 M20,2c1.1,0,2,0.9,2,2v16c0,1.1-0.9,2-2,2H4 c-1.1,0-2-0.9-2-2V4c0-1.1,0.9-2,2-2H20z"/>
-				</span>
-				<span>Biryani</span>
-			</a>
-				<a class="menuButton" onclick="toggleMenu();">
-				Learn More
-				<span>
-					<!-- SVG embedded as inline markup: CSS will be applied. -->
-					<svg class="chevronIcon" width="10px" height="10px" viewBox="0 0 10 10" focusable="false" aria-hidden="true">
-						<g>
-							<path d="M10,0v3L5,7L0,3V0l5,4L10,0z"></path>
-						</g>
-					</svg>
-					<span>
-			</a>
-      <div class="sideMenu">
-				<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-        <a href="https://twitter.com/" class="fa fa-twitter"></a>
-        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-			</div>
-		</nav>
-		<!-- this menu is toggled with JavaScript -->
-		<nav id="mainMenu">
-			<ul>
-				<li><a href="index.html">About</a></li>
-				<li><a href="recipe.html">Recipe</a></li>
-				<li><a href="types.html">Types</a></li>
-  			<li><a href="credits.html">Credits</a></li>
-			</ul>
-		</nav>
-		<nav id="subNav">
-			<ul>
-				<li><a class="gem" href="index.html">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="recipe.html">Recipe</a></li>
-				<li><a href="types.html">Types</a></li>
-      	<li><a href="credits.html">Credits</a></li>
-			</ul>
-		</nav>
+    <!--Pages Navigation inspiration from https://getbootstrap.com/docs/5.0/components/navbar/#responsive-behaviors-->
 
-	</header>
-
-	<section id="banner">
-		<div id="overlay">
-			<h1 style ="color:white">Credits</h1>
-		</div>
-	</section>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="70px"; width="250px";></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Introduction</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Resume.html">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Information</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="credits.html">Credits</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div class="container marketing">
 <!--references-->
   <body>
     <span class="mw-headline" id="References">References:</span>
     <ol class="references">
-      <p>1. Adams, et. al (2021)<a href="https://fonts.google.com/specimen/Oswald"> Google Fonts</a> Retrived May 20, 2021.</p>
-      <p>2. Greene (2021)<a href="https://fonts.google.com/specimen/Courier+Prime?query=cour"> Google Fonts</a> Retrived May 20, 2021.</p>
-      <p>3. Google (2021)<a href="https://fonts.google.com/icons"> Google Icons </a> Retrived May 20, 2021.</p>
-      <p>4. cdnjs (2021)<a href="https://cdnjs.com/libraries/font-awesome"> Cloudflare Font-Awesome </a> Retrived May 21, 2021.</p>
-      <p>5. w3schools (2021)<a href="https://www.w3schools.com/"> w3schools </a> Retrived May 21, 2021.</p>
-      <p>6. Facebook (2021)<a href="https://www.facebook.com/"> Facebook Welcome Page </a> Retrived May 21, 2021.</p>
-      <p>7. Twitter (2021)<a href="https://twitter.com/"> Twitter Welcome Page </a> Retrived May 21, 2021.</p>
-      <p>8. YouTube (2021)<a href="https://www.youtube.com/embed/4427l6ksGg0"> Filming an EPIC BIRYANI Commercial | A CINEMATIC BIRYANI B ROLL! |</a> Retrived May 21, 2021.</p>
-      <p>9. Wikipedia (2021)<a href="https://en.wikipedia.org/wiki/Biryani#Varieties"> Biryani </a> Retrived May 22, 2021.</p>
-      <p>10. Hansel (2019)<a href="https://images.unsplash.com/photo-1552590635-27c2c2128abf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmlyeWFuaXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60
-"> Biryani </a> Retrived May 23, 2021.</p>
-      <p>11. Singh (2020)<a href="https://images.unsplash.com/photo-1589302168068-964664d93dc0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80
-"> Biryani </a> Retrived May 23, 2021.</p>
-      <p>12. Ahmed (2018)<a href="https://images.unsplash.com/photo-1532375810709-75b1da00537c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80
-"> India Flag </a> Retrived May 23, 2021.</p>
-      <p>13. Xheikh (2019)<a href="https://images.unsplash.com/photo-1577655791634-40e1da438fd0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80”
-"> Pakistan Flag </a> Retrived May 22, 2021.</p>
-<!--footer-->
-	<footer id="footer">
-		<ul>
-			<li class="extendedLogo">
-        <a href="/">
-          </a>
-			</li>
-			<li class="copyright">
-				<span>©</span>2020
-				 Biryani ltd.
-			</li>
-		</ul>
-	</footer>
+      <p>1. Bjork, M (2018)<a href="https://unsplash.com/photos/rH8O0FHFpfw"> Image</a></p>
+      <p>2. Hume, C (2017)<a href="https://unsplash.com/photos/hBuwVLcYTnA"> Image</a></p>
+      <p>3. Keegan, L (2020)<a href="https://unsplash.com/photos/XQaqV5qYcXg"> Image </a></p>
+      <p>4. McCutcheon, K (2018)<a href="https://unsplash.com/photos/APDMfLHZiRA"> Image </a></p>
+      <p>5. Ridho, R (2017)<a href="https://unsplash.com/photos/VlXlW77swwY"</a>Image </p>
+      <p>6. getbootstrap (2021)<a href="https://getbootstrap.com/"> GetBootsrap</a></p>
+    </body>
+</html>
 
 </body>
 
